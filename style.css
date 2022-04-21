@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,700;1,400;1,900&display=swap');
+
+/* main 레이아웃 */
+.main {
+    width: 1060px;
+    background: #F2F2F2;
+    box-sizing: border-box;
+    border: 2px solid #BDBDBD;
+    border-radius: 15px;
+    margin: 91px auto 135px;
+    padding: 40px 28px 30px;
+}
+
+.main-tit {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.movie-kinds-box {
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 28px 0;
+    border-top: 2px solid #BDBDBD;;
+
+}
+.movie-kind:nth-child(n+2) {
+    margin-left: 60px;
+}
+.movie-kind {
+    display: inline-block;
+    color: #828282;
+    cursor: pointer;
+}
+.movie-kind:hover {
+    color: #000;
+}
+
+/* contents 레이아웃 */
+.contents-list {
+    width: 1003px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 2px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 25px 26px 29px;
+    gap: 22px;
+}
+
+.contents-list .movie-item {
+    width: 220px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.movie-info {
+    padding: 19px 20px 18px 20px;
+}
+.movie-poster {
+    width: 180px;
+    height: 250px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+.movie-info h2 {
+    margin: 12px 0;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    text-overflow: ellipsis;
+}
+
+.movie-text dt, .movie-text dd {
+    display: inline;
+}
+.movie-text dt {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #828282;
+    margin-right: 5px;
+}
+.movie-text dd {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+.movie-star {
+    float: right;
+}
+.movie-star dt {
+    margin-right: 18px;
+}
+.star {
+    position: relative;
+}
+.movie-star .star::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url(./images/별점이미지.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+    position: absolute;
+    left: -18px;
+    top: 2px;
+}
+.movie-text div {
+    overflow: hidden;
+}
+.movie-text div:nth-of-type(n+2) {
+    margin-top: 5px;
+}
+.movie-item footer {
+    position: relative;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    background: #F2F2F2;
+    border-top: 1px solid #BDBDBD;
+}
+.movie-item footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 106px;
+    width: 1px;
+    height: 80px;
+    background-color: #BDBDBD;
+}
+.movie-link {
+    overflow: hidden;
+}
+.movie-link a {
+    float: left;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+}
+.movie-book {
+    width: 106px;
+    padding: 9px 27px 11px;
+}
+footer .movie-trailer {
+    width: 112px;
+    padding: 9px 31px 11px 41px; 
+    position: relative;
+}
+
+.movie-link .movie-trailer::before {
+    content: '';
+    position: absolute;
+    background-image: url(./images/아이콘_재생.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 9px;
+    left: 23px;
+    width: 16px;
+    height: 16px;
+}
