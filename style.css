@@ -2,11 +2,12 @@
 
 /* 초기작업 */
 .text-hide {
-        display:block;
-        overflow:hidden;
-        Font-size:1px;
-        line-height:0;
-        text-indent:-9999px;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
 }
 
 /* main 레이아웃 */
@@ -60,13 +61,13 @@
     border-radius: 15px;
     padding: 25px 26px 29px;
     gap: 22px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
 
 .contents-list .movie-item {
     width: 220px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
     border-radius: 10px;
     display: inline-block;
     overflow: hidden;
@@ -241,21 +242,26 @@ footer .movie-trailer {
 }
 .company-info-text dd {
     position: relative;
-    margin-right: 14px;
+    margin-right: 20px;
 }
-.company-info-text dd::before {
+.company-info-text dd::after {
     content: '';
     position: absolute;
     width: 1px;
     height: 16px;
-    top: 4px;
-    left: -8px;
+    margin-left: 12px;
+    float: right;
     background-color: #4F4F4F;
+}
+.company-info-text dd:nth-of-type(5):after {
+    width: 0;
+}
+.company-info-text dd:nth-of-type(6):after {
+    width: 0;
 }
 .company-info-text dd:nth-of-type(1)::before {
     margin-left: 30px;
 }
-
 .copyright {
     float: right;
 }
