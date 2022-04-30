@@ -91,7 +91,11 @@
     font-size: 16px;
     text-overflow: ellipsis;
 }
-
+/* .movie-text {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1 1 1;
+} */
 .movie-text dt, .movie-text dd {
     display: inline;
 }
@@ -109,34 +113,47 @@
     font-weight: 400;
     font-size: 13px;
 }
-.movie-star {
-    float: right;
+.score {
+    margin-right: 23px;
 }
-.movie-star dt {
-    margin-right: 18px;
+.half-w {
+    width: 50%;
+    float: left;
 }
-.star {
+.movie-text .half-w .star {
     position: relative;
 }
-.movie-star .star::before {
+.movie-text .half-w .score {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.star {
+    margin-left: 18px;
+    float: right;
+    line-height: 19px;
+}
+.star::before {
     content: '';
-    width: 14px;
-    height: 14px;
-    background-image: url(./images/별점이미지.png); 
+    width: 12px;
+    height: 12px;
+    background-image: url(./images/별점이미지.svg); 
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 30px;
     position: absolute;
-    left: -18px;
-    top: 2px;
+    left: -16px;
+    top: 4px;
 }
 .movie-text div {
     overflow: hidden;
 }
-.movie-text div:nth-of-type(n+2) {
+.movie-text div:nth-of-type(n) {
+    float: left;
+}
+.movie-text div:nth-of-type(n+3) {
     margin-top: 5px;
 }
-.movie-item footer {
+.movie-link {
+    float: left;
     position: relative;
     font-family: 'Noto Sans KR';
     font-style: normal;
@@ -144,6 +161,7 @@
     font-size: 14px;
     background: #F2F2F2;
     border-top: 1px solid #BDBDBD;
+    margin-top: 18px;
 }
 .movie-item footer::after {
     content: '';
@@ -253,11 +271,11 @@ footer .movie-trailer {
     float: right;
     background-color: #4F4F4F;
 }
-.company-info-text dd:nth-of-type(5):after {
-    width: 0;
-}
 .company-info-text dd:nth-of-type(6):after {
-    width: 0;
+    width: 0
+}
+.company-info-text dd:nth-of-type(5):after {
+    width: 0;;
 }
 .company-info-text dd:nth-of-type(1)::before {
     margin-left: 30px;
