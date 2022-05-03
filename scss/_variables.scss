@@ -4,7 +4,15 @@ $base-color: #F2F2F2;
 
 @mixin button {
   flex-basis: 50%;
+  box-sizing: border-box;
   text-decoration: none;
   color: black;
+  font-size: 14px;
   padding: 9px 0 11px;
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

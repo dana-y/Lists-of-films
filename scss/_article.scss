@@ -50,7 +50,6 @@
     width: 220px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
-    // filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
     border-radius: 10px;
     overflow: hidden;
     .movie-info {
@@ -69,11 +68,18 @@
         font-size: 16px;
         margin: 11px 0 12px;
         text-align: left;
+        @include ellipsis;
       }
       .movie-text {
         display: flex;
         flex-direction: column;
         text-align: left;
+        gap: 5px;
+        .half-w {
+          display: flex;
+          justify-content: space-between;
+          text-align: middle;
+        }
         dd, dt {
           display: inline-block;
           font-family: 'Noto Sans KR';
@@ -83,12 +89,9 @@
         dt{
           color: #828282;
           margin-right: 5px;
-        }
-        .half-w:nth-child(n+3) {
-          margin-top: 5px;
+          @include ellipsis;
         }
         .score {
-          margin-left: 42px;
           margin-right: 15px;
         }
         .star {
@@ -126,5 +129,17 @@
 }
   .movie-trailer {
     @include button;
+    
+    &::before {
+      content: '';
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      background-image: url(../images/아이콘_재생.png);
+      background-position: center;
+      background-size: 100%;
+      margin-right: 2px;
+      // vertical-align: text-bottom;
+    }
   }
 }

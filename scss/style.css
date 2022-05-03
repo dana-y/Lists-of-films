@@ -95,6 +95,9 @@
   font-size: 16px;
   margin: 11px 0 12px;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contents .movie-item .movie-info .movie-text {
@@ -106,6 +109,17 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+  gap: 5px;
+}
+
+.contents .movie-item .movie-info .movie-text .half-w {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: middle;
 }
 
 .contents .movie-item .movie-info .movie-text dd, .contents .movie-item .movie-info .movie-text dt {
@@ -118,14 +132,12 @@
 .contents .movie-item .movie-info .movie-text dt {
   color: #828282;
   margin-right: 5px;
-}
-
-.contents .movie-item .movie-info .movie-text .half-w:nth-child(n+3) {
-  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contents .movie-item .movie-info .movie-text .score {
-  margin-left: 42px;
   margin-right: 15px;
 }
 
@@ -164,16 +176,33 @@
 .movie-link .movie-book {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   color: black;
+  font-size: 14px;
   padding: 9px 0 11px;
 }
 
 .movie-link .movie-trailer {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   color: black;
+  font-size: 14px;
   padding: 9px 0 11px;
+}
+
+.movie-link .movie-trailer::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-image: url(../images/아이콘_재생.png);
+  background-position: center;
+  background-size: 100%;
+  margin-right: 2px;
 }
 /*# sourceMappingURL=style.css.map */
