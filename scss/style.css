@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,700;1,400;1,900&display=swap");
+.wrapper {
+  width: 1060px;
+  margin: 90px auto 135px;
+  background-color: #F2F2F2;
+  text-align: center;
+  border: 2px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.wrapper .main-tit {
+  width: 650px;
+  padding: 40px 0 37px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 auto;
+  border-bottom: 2px solid #BDBDBD;
+}
+
+.wrapper .movie-kinds-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 28px 344px;
+  color: #828282;
+  font-family: 'Roboto';
+}
+
+.wrapper .movie-kinds-box li {
+  cursor: pointer;
+}
+
+.wrapper .movie-kinds-box li:hover {
+  color: black;
+  font-weight: 900;
+}
+
+.contents {
+  width: 1003px;
+  border: 2px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 25px;
+  margin: 28px auto 30px;
+}
+
+.contents .contents-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 23px;
+}
+
+.contents .movie-item {
+  width: 220px;
+  border: 1px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+}
+
+.contents .movie-item .movie-info {
+  padding: 19px;
+}
+
+.contents .movie-item .movie-info .movie-poster {
+  width: 180px;
+  height: 250px;
+  border: 1px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
