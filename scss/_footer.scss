@@ -1,0 +1,68 @@
+.footer {
+  background-color: $base-color;
+  .footer-header {
+    border-bottom: 1px solid #C4C4C4;
+      padding: 53px 0 42px;
+      .footer-tit{
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 22px;
+      display: inline-block;
+    }
+  }
+  
+  .social-link-list {
+    display: inline;
+    float: right;
+    li {
+      display: inline;
+    }
+  }
+  .social-link {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 56px 56px;
+
+    &.twitter {
+      background-image: url(../images/css_sprites.png);
+      background-position: top left;
+    }
+    &.facebook {
+      background-image: url(../images/css_sprites.png);
+      background-position: top right;
+    }
+    &.insta {
+      background-image: url(../images/css_sprites.png);
+      background-position: bottom left;
+    }
+  }
+}
+.footer-company-info {
+  padding: 36px 0 38px;
+  dt, dd {
+    display: inline-block;
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    font-weight: 400;
+    color: #4F4F4F;
+  }
+  .bold, dt {
+    font-weight: 700;
+  }
+  .copyright {
+    float: right;
+  }
+  .company-info-text {
+    dt::before, .ir-dd::before{
+      content: '';
+      width: 1px;
+      height: 16px;
+      background-color: #4F4F4F;
+      float: left;
+      margin-left: 4px;
+      margin-right: 6px;
+    }
+  }
+}
