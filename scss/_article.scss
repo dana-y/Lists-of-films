@@ -51,6 +51,7 @@
   background-color: #fff;
   padding: 25px;
   margin: 28px auto 30px;
+
   .contents-list {
     display: flex;
     flex-wrap: wrap;
@@ -63,6 +64,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 0 5px  rgba(0, 0, 0, 0.3);
     .movie-info {
       padding: 19px;
       .movie-poster {

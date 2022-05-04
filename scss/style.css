@@ -84,6 +84,8 @@
           box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .contents .movie-item .movie-info {
@@ -242,6 +244,7 @@
 
 .footer .social-link-list li {
   display: inline;
+  margin-left: 10px;
 }
 
 .footer .social-link {
@@ -252,19 +255,19 @@
   background-size: 56px 56px;
 }
 
-.footer .social-link.twitter {
-  background-image: url(../images/css_sprites.png);
-  background-position: top left;
-}
-
-.footer .social-link.facebook {
+.footer .social-link.insta {
   background-image: url(../images/css_sprites.png);
   background-position: top right;
 }
 
-.footer .social-link.insta {
+.footer .social-link.twitter {
   background-image: url(../images/css_sprites.png);
   background-position: bottom left;
+}
+
+.footer .social-link.facebook {
+  background-image: url(../images/css_sprites.png);
+  background-position: top left;
 }
 
 .footer-company-info {

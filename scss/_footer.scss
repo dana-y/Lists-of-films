@@ -16,6 +16,7 @@
     float: right;
     li {
       display: inline;
+      margin-left: 10px;
     }
   }
   .social-link {
@@ -25,17 +26,17 @@
     background-repeat: no-repeat;
     background-size: 56px 56px;
 
-    &.twitter {
-      background-image: url(../images/css_sprites.png);
-      background-position: top left;
-    }
-    &.facebook {
+    &.insta {
       background-image: url(../images/css_sprites.png);
       background-position: top right;
     }
-    &.insta {
+    &.twitter {
       background-image: url(../images/css_sprites.png);
       background-position: bottom left;
+    }
+    &.facebook {
+      background-image: url(../images/css_sprites.png);
+      background-position: top left;
     }
   }
 }
