@@ -133,7 +133,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: middle;
+  vertical-align: top;
 }
 
 .contents .movie-item .movie-info .movie-text dd, .contents .movie-item .movie-info .movie-text dt {
