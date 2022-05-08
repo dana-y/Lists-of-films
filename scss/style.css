@@ -126,16 +126,6 @@
   gap: 5px;
 }
 
-.contents .movie-item .movie-info .movie-text .half-w {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  vertical-align: top;
-}
-
 .contents .movie-item .movie-info .movie-text dd, .contents .movie-item .movie-info .movie-text dt {
   display: inline-block;
   font-family: 'Noto Sans KR';
@@ -146,20 +136,28 @@
 .contents .movie-item .movie-info .movie-text dt {
   color: #828282;
   margin-right: 5px;
+}
+
+.contents .movie-item .movie-info .movie-text dd {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.contents .movie-item .movie-info .movie-text .score {
+.contents .movie-item .movie-info .movie-text .half-w {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contents .movie-item .movie-info .movie-text .half-w .score {
   margin-right: 15px;
 }
 
-.contents .movie-item .movie-info .movie-text .star {
-  position: relative;
-}
-
-.contents .movie-item .movie-info .movie-text .star::before {
+.contents .movie-item .movie-info .movie-text .half-w .star::before {
   content: '';
   background-image: url(../images/별점이미지.svg);
   width: 14px;
@@ -286,17 +284,19 @@
   font-weight: 700;
 }
 
+.footer-company-info dt, .footer-company-info .ir-dd {
+  padding-left: 3px;
+}
+
+.footer-company-info dd {
+  padding-right: 6px;
+}
+
 .footer-company-info .copyright {
   float: right;
 }
 
-.footer-company-info .company-info-text dt::before, .footer-company-info .company-info-text .ir-dd::before {
-  content: '';
-  width: 1px;
-  height: 16px;
-  background-color: #4F4F4F;
-  float: left;
-  margin-left: 4px;
-  margin-right: 6px;
+.bor-r {
+  border-right: 1px solid #4F4F4F;
 }
 /*# sourceMappingURL=style.css.map */

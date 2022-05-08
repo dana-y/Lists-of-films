@@ -88,38 +88,44 @@
         flex-direction: column;
         text-align: left;
         gap: 5px;
-        .half-w {
-          display: flex;
-          justify-content: space-between;
-        dd, dt {
+
+        dd, dt{
           display: inline-block;
           font-family: 'Noto Sans KR';
           font-weight: 400;
           font-size: 13px;
         }
-        dt{
+        dt {
           color: #828282;
           margin-right: 5px;
+        }
+        dd {
           @include ellipsis;
         }
-        .score {
-          margin-right: 15px;
-        }
-        .star {
-          position: relative;
-          &::before {
-            content: '';
-            background-image: url(../images/별점이미지.svg);
-            width: 14px;
-            height: 14px;
-            position: absolute;
-            margin-left: -16px;
+        .half-w {
+          display: flex;
+          justify-content: space-between;
+
+          .score {
+            margin-right: 15px;
+          }
+          .star {
+            &::before {
+              content: '';
+              background-image: url(../images/별점이미지.svg);
+              width: 14px;
+              height: 14px;
+              position: absolute;
+              margin-left: -16px;
+            }
           }
         }
       }
     }
   }
 }
+
+
 .movie-link {
   background: #F2F2F2;
   display: flex;
@@ -137,7 +143,7 @@
   }
   .movie-book {
     @include button;
-}
+  }
   .movie-trailer {
     @include button;
     
@@ -154,4 +160,3 @@
     }
   }
 }
-

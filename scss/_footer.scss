@@ -52,18 +52,16 @@
   .bold, dt {
     font-weight: 700;
   }
+  dt, .ir-dd {
+    padding-left: 3px;
+  }
+  dd {
+    padding-right: 6px;
+  }
   .copyright {
     float: right;
   }
-  .company-info-text {
-    dt::before, .ir-dd::before{
-      content: '';
-      width: 1px;
-      height: 16px;
-      background-color: #4F4F4F;
-      float: left;
-      margin-left: 4px;
-      margin-right: 6px;
-    }
-  }
+}
+.bor-r {
+  border-right: 1px solid #4F4F4F;
 }
